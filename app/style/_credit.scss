@@ -1,0 +1,45 @@
+#credit{
+  // position: relative;
+  // border: solid red;
+  .gray-trap{
+    position: relative;
+    // width: 100%;
+    .businessman{
+      position: absolute;
+      z-index: 10;
+      right: 40%;
+      transform: skewX(0deg);
+      height: 100%;
+    }
+    .box{
+        width: 60%;
+        border-right: solid;
+        .box__content{
+            // border: solid;
+            text-align: end;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            position: absolute;
+            right: 10%;
+            color: $gray-color;
+            // border-right: ;
+            .contact-number-container{
+                display: flex;
+                // border: solid;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: center;
+                // margin-top: 3px;
+                color: $brown-color;
+                &__call{
+                    color: $brown-color;
+                    transform: translateY(3px);
+                    margin-right: 3%;
+                }
+            }
+        }
+    }
+  }
+}

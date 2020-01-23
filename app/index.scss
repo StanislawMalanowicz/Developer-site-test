@@ -1,3 +1,319 @@
+@import 'variables';
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "../app/style/credit";
+@import "../app/style/contact";
+
 body {
   font-family: sans-serif;
 }
+
+
+.box{
+  height: 300px;
+  border: solid;
+  .minibox{
+    height: 200px;
+    border: solid;
+  }
+}
+#navbarResponsive{
+  // display: flex;
+  justify-content: flex-start;
+}
+
+   
+.opacity-90 {
+  opacity: 0.9; 
+}
+.gallery{
+  padding-top: 50px;
+  position: relative;
+ 
+  .title{
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+      text-transform: uppercase;
+      font-size: 1rem;;
+    }
+  }
+}
+
+.carousel-item:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.5);
+}
+
+ .navbar-nav{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+}
+// #trapeze {
+// 	width: 150px;
+// 	height: 0;
+// 	border-left: 0px solid transparent;
+// 	border-right: 100px solid transparent;
+// 	border-bottom: 130px solid #F34A53;
+// 	margin: 40px auto 0;
+// }
+
+
+
+
+ .parallelogram {
+      transform: skew(-10deg);
+    }
+
+
+
+
+
+// trapezoid divs: 
+
+
+.main{
+  // position: absolute;
+  display: none;
+  transform: translateY(-235px);
+  // top: 302px;
+  // z-index: -1;
+  width: 100%;
+  background: $odd-color;
+  margin: auto;
+  overflow: hidden;
+  .box{
+    width: 25%; //zarządź przestrzenią przy pomocy przestrzeni flex lub grid
+    // height: 350px;  // optional
+    // z-index: 10;
+    // color: red;
+    border: 0;
+    &3{
+      background: $odd-color;
+    }
+    &2,&4{
+      background: $even-color;
+    }
+    &2,&3,&4{
+      transform: skew(-10deg);
+    }
+   
+    &4{
+      position: relative;
+      &:after{
+        content: " ";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        border-right: 100vw solid $even-color;
+      }
+      
+    }
+    
+  }
+
+}
+
+.fasada, h1, p{
+  z-index: 1000;
+}
+.fasada {
+  color: rgb(242, 167, 59);
+  transition: .2s;
+}
+.fasada:hover{
+  cursor: pointer;
+  transform: skewX(10deg) scale(1.3);
+}
+//  ************ zrobić animację !!!
+
+
+
+
+.brown-color{
+  color: $brown-color;
+}
+
+
+.relative{
+  position: relative;
+}
+.trapez-background{
+  position: absolute;
+  right: 0;
+  width: 46%;
+  height: 100%;
+  background: $odd-color;
+  transform: skewX(-10deg);
+}
+
+.image-container{
+  width: 100%;
+  height:  80%;
+  // border: solid;
+}
+
+.gray-trap{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+
+    // ustaw obrazek zeby nie rozpychal kolejnego diva tylko na niego najeżdżał
+     
+     .box{
+      position: relative;
+      width: 85%;
+      height: 100%;
+      background: $even-color;
+      transform: skewX(-10deg) translateX(62px);
+      border: 0;
+      border-right: solid 100px $odd-color;
+     
+     &__content{
+      position: absolute;
+      transform: skewX(10deg) translateX(0px);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+     }
+    }
+  }
+
+
+  // add the same height in each sections
+.credit, #about{
+  display: flex;
+  height: 650px;
+  // border: solid;
+  flex-direction: column;
+  
+}
+#about{
+  height: 800px;
+  // border: solid blue;
+
+  h1{
+    // border: solid;
+    height: 10%;
+  }
+  .gray-trap{
+    height: 50%;
+    // border: solid red;
+    position: relative;
+      .trap-image-container{
+          border: solid $gold-color 8px;
+          width: 80%;
+          height: 80%;
+          // margin-top: 6%;
+          // margin-bottom: 6%;
+          transform: skewX(-10deg) translateX(-62%);
+        
+          top: 30px;
+          overflow: hidden;
+          z-index: 10;
+          position: absolute;
+            .image{
+                background: url(https://bi.im-g.pl/im/91/be/14/z21750929V,Osiedle-Zoliborz-Artystyczny.jpg);
+                position:absolute;
+                top:-30px;
+                left:-30px;
+                right:-30px;
+                bottom:-30px;
+                background-size: 130%;
+                background-repeat: no-repeat;
+                transform: skew(10deg);
+              }
+      }
+      .box{
+        width: 76%;
+        // position: relative;
+        transform: skewX(-10deg) translateX(70px);
+        // border: solid;
+        &__content{
+          position: absolute;
+          right: 100px;
+          // border: solid blue;
+          width: 350px;
+          transform: skewX(10deg);
+          p{
+            color: $gray-color;
+          }
+        }
+      }
+  }
+  .multi-trap-contaner{
+    height: 25%;
+    // border: solid;
+    margin-top: 20px;
+    width: 100%;
+    .main{
+      transform: translateY(0);
+      height: 100%;
+     
+    }
+  }
+}
+
+
+
+
+.skew-back{
+  transform: skewX(10deg) translateX(0px);
+}
+
+
+.b{
+  border: solid red;
+}
+
+
+
+
+.title-color{
+  color: $title-color;
+  font-size: 2rem;
+  &:after, &:before{
+    content: ' ';
+    position: absolute;
+    color: $gold-color;
+    width: 30px;
+    border: solid 1px;
+    // bottom: 10%;
+    transform: translate(10px, 17px) ;
+  }&:before{
+    transform: translate(-40px, 17px);
+  }
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+         .height-230
+         {
+          height: 230px; 
+         }
+         .main{
+           display: flex;
+         }
+     }

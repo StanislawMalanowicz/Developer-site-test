@@ -1,0 +1,105 @@
+#contact{
+      display: flex;
+  height: 750px;
+  flex-direction: column;
+  
+    .contact-container{
+        background-color: $odd-color;
+        // border: solid red;
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        display: flex;
+
+        .trapez-left{
+            position: absolute;
+            background-color: $even-color;
+            width: 100%;
+            height: 100%;
+            transform: translateX(70px) skewX(13deg);
+            z-index: -1;
+        }
+
+        .content-container{
+            position: absolute;
+            // border: solid green;
+            left: 15%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // top: 50px;
+            height: 100%;
+            text-align: center;
+            width: 300px;
+            color: $gray-color;
+            h4{
+                color: $brown-color;
+            }
+            p{
+                font-size: large;
+            }
+            p,h4{
+                margin: 7px;
+            }
+            .go-up{
+                position: relative;
+                bottom: 15px;
+            }
+        }
+
+
+
+        .trap-container{
+          width: 60%;
+          height: 80%;
+          border: solid 8px $brown-color;
+          position: absolute;
+          right: -10%;
+          bottom: 10%;
+          transform: skewX(10deg);
+          background: gray;
+
+          &:before, &:after{
+            content: '';
+            width: 60%;
+            position: absolute;
+            background: white;
+            border: solid 4px $even-color; // like container background
+            right: -1px;
+            top: -8px;
+            transform: skewX(-10deg)
+          }
+          &:after{
+            width: 73%;
+            top: 100%;
+          }
+
+          .image{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            ;
+            &:after{
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              left: -15%;
+              background-image: url("https://bi.im-g.pl/im/91/be/14/z21750929V,Osiedle-Zoliborz-Artystyczny.jpg");
+              transform: skewX(-10deg);
+              background-size: cover;
+              transition: .45s;
+            }
+            &:hover{
+              &:after{
+                transform: skewX(-10deg) scale(1.1);
+                cursor: pointer;
+              }
+            }
+          }
+        }
+    }
+    margin-bottom: 80px;
+}

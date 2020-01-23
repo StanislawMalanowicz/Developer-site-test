@@ -415,6 +415,8 @@ body {
          }
          #navbarNav{
           .link{
+            box-sizing: border-box;
+            transition: .4s;
             &__1, &__2, &__3, &__4{
               position: relative;
               font-size: 1.2rem;
@@ -426,7 +428,8 @@ body {
               left: 2%;
             }
            &:hover{
-             border-bottom: solid;
+             border-bottom: solid 1px $brown-color;
+            //  color: greenyellow;
            }
 
           }
@@ -449,7 +452,7 @@ body {
             left: 50%;
             margin-left: -60px;
             text-align: center;
-            background: url("https://fajnelogo.pl/html/public/images/files/ObpqRgcyUZaQ1LljswFTID5MWHAJut8YoGPxX06S734iCBhd9NvfrV2EkmnzKe/7991/325x250_10494847_buildjpg.jpg");
+            background: url("https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/168398/580/387/m1/fpnw/wm0/1-converted-01-.png?1408793749&s=287272880eb4ecac330e13ca2a84e849");
             background-size: 100%;
             background-position: center;
           }

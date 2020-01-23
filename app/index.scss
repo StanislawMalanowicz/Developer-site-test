@@ -19,7 +19,6 @@ body {
   }
 }
 #navbarResponsive{
-  // display: flex;
   justify-content: flex-start;
 }
 
@@ -64,15 +63,6 @@ body {
             justify-content: space-around;
             align-items: center;
 }
-// #trapeze {
-// 	width: 150px;
-// 	height: 0;
-// 	border-left: 0px solid transparent;
-// 	border-right: 100px solid transparent;
-// 	border-bottom: 130px solid #F34A53;
-// 	margin: 40px auto 0;
-// }
-
 
 
 
@@ -81,27 +71,17 @@ body {
     }
 
 
-
-
-
-// trapezoid divs: 
-
-
 .main{
-  // position: absolute;
   display: none;
   transform: translateY(-235px);
-  // top: 302px;
-  // z-index: -1;
+ 
   width: 100%;
   background: $odd-color;
   margin: auto;
   overflow: hidden;
   .box{
     width: 25%; //zarządź przestrzenią przy pomocy przestrzeni flex lub grid
-    // height: 350px;  // optional
-    // z-index: 10;
-    // color: red;
+  
     border: 0;
     &3{
       background: $odd-color;
@@ -165,7 +145,6 @@ body {
 .image-container{
   width: 100%;
   height:  80%;
-  // border: solid;
 }
 
 .gray-trap{
@@ -203,7 +182,6 @@ body {
 .credit, #about{
   display: flex;
   height: 650px;
-  // border: solid;
   flex-direction: column;
   
 }
@@ -219,30 +197,115 @@ body {
     height: 50%;
     // border: solid red;
     position: relative;
-      .trap-image-container{
-          border: solid $gold-color 8px;
-          width: 80%;
-          height: 80%;
-          // margin-top: 6%;
-          // margin-bottom: 6%;
-          transform: skewX(-10deg) translateX(-62%);
-        
-          top: 30px;
-          overflow: hidden;
-          z-index: 10;
-          position: absolute;
+
+
+
+
+
+
+  .trap-container{
+            width: 60%;
+            height: 80%;
+            border: solid 8px $gold-color;
+            position: absolute;
+            left: -10%;
+            bottom: 10%;
+            transform: skewX(-10deg);
+            background: gray;
+            z-index: 10;
+
+            &:before, &:after{
+              content: '';
+              width: 75%;
+              position: absolute;
+              background: white;
+              border: solid 4px white; // like container background
+              left: -100px;
+              top: -8px;
+              transform: skewX(10deg);
+            }
+            &:after{
+              width: 83%;
+              top: 100%;
+            }
+
             .image{
-                background: url(https://bi.im-g.pl/im/91/be/14/z21750929V,Osiedle-Zoliborz-Artystyczny.jpg);
-                position:absolute;
-                top:-30px;
-                left:-30px;
-                right:-30px;
-                bottom:-30px;
-                background-size: 130%;
-                background-repeat: no-repeat;
-                transform: skew(10deg);
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              ;
+              &:after{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                right: -15%;
+                background-image: url("https://bi.im-g.pl/im/91/be/14/z21750929V,Osiedle-Zoliborz-Artystyczny.jpg");
+                transform: skewX(10deg);
+                background-size: cover;
+                transition: .45s;
               }
-      }
+              &:hover{
+                &:after{
+                  transform: skewX(10deg) scale(1.1);
+                  cursor: pointer;
+                }
+              }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // .trap-image-container{
+      //     border: solid $gold-color 8px;
+      //     width: 80%;
+      //     height: 80%;
+      //     transform: skewX(-10deg) translateX(-62%);
+        
+      //     top: 30px;
+      //     overflow: hidden;
+      //     z-index: 10;
+      //     position: absolute;
+      //     &:after{
+      //       content: "";
+      //       position: absolute;
+      //       width: 50px;
+      //       height: 100px;
+      //       left: 0;
+      //       top: 0;
+      //       background-color: greenyellow;
+      //       z-index: 100;
+      //     }
+      //       .image{
+                
+      //           background: url(https://bi.im-g.pl/im/91/be/14/z21750929V,Osiedle-Zoliborz-Artystyczny.jpg);
+      //           position:absolute;
+      //           top:-30px;
+      //           left:-30px;
+      //           right:-30px;
+      //           bottom:-30px;
+      //           background-size: 110%;
+      //           background-repeat: no-repeat;
+      //           transform: skew(10deg);
+      //         }
+      // }
       .box{
         width: 76%;
         // position: relative;

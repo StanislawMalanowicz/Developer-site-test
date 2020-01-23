@@ -411,5 +411,46 @@ body {
          }
          .main{
            display: flex;
+          //  border: solid;
          }
-     }
+         #navbarNav{
+          .link{
+            &__1, &__2, &__3, &__4{
+              position: relative;
+              font-size: 1.2rem;
+            } 
+            &__1, &__2{
+              right: 2%;
+            }
+            &__3, &__4{
+              left: 2%;
+            }
+           &:hover{
+             border-bottom: solid;
+           }
+
+          }
+         }
+        //  .company-logo{
+        //   //  border: solid;
+        //    position: absolute;
+        //   //  left: 43%;
+        //   margin: auto;
+        //  }
+        .navigationn{
+          position: absolute;
+          left: 0;
+        }
+          .navbar-brand{
+            position: relative;
+            // border: solid;
+            height: 60px;
+            width: 120px;
+            left: 50%;
+            margin-left: -60px;
+            text-align: center;
+            background: url("https://fajnelogo.pl/html/public/images/files/ObpqRgcyUZaQ1LljswFTID5MWHAJut8YoGPxX06S734iCBhd9NvfrV2EkmnzKe/7991/325x250_10494847_buildjpg.jpg");
+            background-size: 100%;
+            background-position: center;
+          }
+        }

@@ -1,0 +1,31 @@
+.gray-trap{
+    border: solid;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+
+    // ustaw obrazek zeby nie rozpychal kolejnego diva tylko na niego najeżdżał
+     
+     .box{
+      position: relative;
+      border: solid;
+      width: 85%;
+      height: 100%;
+      background: $even-color;
+      transform: skewX(-10deg) translateX(62px);
+      border: 0;
+      border-right: solid 100px $odd-color;
+     
+     &__content{
+      position: absolute;
+      transform: skewX(10deg) translateX(0px);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+     }
+    }
+  }

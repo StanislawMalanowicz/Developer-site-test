@@ -1,0 +1,48 @@
+.brown-color{
+  color: $brown-color;
+}
+
+
+.relative{
+  position: relative;
+}
+
+
+.skew-back{
+  transform: skewX(10deg) translateX(0px);
+}
+
+
+.b{
+  border: solid red;
+}
+.box{
+  height: 250px;
+}
+   
+.opacity-90 {
+  opacity: 0.9; 
+}
+
+.title-color{
+  color: $title-color;
+  font-size: 2rem;
+  &:after, &:before{
+    content: ' ';
+    position: absolute;
+    color: $gold-color;
+    width: 30px;
+    border: solid 1px;
+    // bottom: 10%;
+    transform: translate(10px, 17px) ;
+  }&:before{
+    transform: translate(-40px, 17px);
+  }
+}
+.translate-button{
+  position: relative;
+  left: 10%;
+}
+.en{
+  display: none;
+}

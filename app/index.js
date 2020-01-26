@@ -6,3 +6,10 @@ import "@fortawesome/fontawesome-free/js/regular";
 import "@fortawesome/fontawesome-free/js/brands";
 
 console.log('Boilerplate is working!');
+
+
+// const translateBtn = document.querySelector('.translate-button');
+
+// translateBtn.addEventListener("click", ()=> {
+
+// })

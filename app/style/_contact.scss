@@ -19,6 +19,9 @@
             height: 100%;
             transform: translateX(70px) skewX(13deg);
             z-index: -1;
+             @include media-breakpoint-down(md){
+                transform: translateX(70px) skewX(13deg)
+              }
         }
 
         .content-container{
@@ -33,11 +36,17 @@
             text-align: center;
             width: 300px;
             color: $gray-color;
+            font-size: 16px;
+             @include media-breakpoint-down(md){
+               font-size: 14px;
+               left: 8%;
+              }
             h4{
                 color: $brown-color;
+                font-size: 1.5em;
             }
             p{
-                font-size: large;
+                font-size: 1.1em;
             }
             p,h4{
                 margin: 7px;
@@ -58,7 +67,17 @@
           right: -10%;
           bottom: 10%;
           transform: skewX(10deg);
-          background: gray;
+          background: $gray-color;
+          @include media-breakpoint-down(md){
+            font-size: 14px;
+            width: 50%;
+            height: 80%;
+          }
+          @include media-breakpoint-down(md){
+            width: 40%;
+            height: 60%;
+            bottom: 20%;
+          }
 
           &:before, &:after{
             content: '';

@@ -112,7 +112,27 @@
 
 
 
+#contact-form{
+  background-color: $odd-color;
+  margin-bottom: 150px;
+  height: 400px;
+  border-bottom: solid white 50px;
 
+  h2, .send{
+    text-transform: uppercase;
+  }
+  input::placeholder, textarea{
+    text-transform: uppercase;
+  }
+  
+}
+#newsletter{
+  background-color: $gold-color;
+
+  .echo-investment-container{
+    border-right: solid;
+  }
+} 
 
 
 

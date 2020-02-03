@@ -147,7 +147,9 @@
     // border: solid blue;
     margin-top: 20px;
     width: 100%;
+    
             .main{
+              
                   display: flex;
                 //  border: solid red;
                  height: 100%;
@@ -156,22 +158,24 @@
                   margin: auto;
                   overflow: hidden;
                   align-items: center;
-                  @include media-breakpoint-down(lg){
-                        // height: 10%;
-                        border: solid orange;
-                      }
+                
                   .box{
                     width: 26%; //zarządź przestrzenią przy pomocy przestrzeni flex lub grid
                     
-                    border: 0;
+                    // border: solid blue;
                     font-size: 18px;
                     // @include media-breakpoint-down(lg){
                     //     font-size: 18px;
                     //   }  
                     @include media-breakpoint-down(lg){
                         font-size: 15px;
+                        border: solid;
+                      }
+                    @include media-breakpoint-down(sm){
+                        font-size: 10px;
                         
                       }
+                    
                     .icon{
                       position: relative;
                       // top: 5px;
@@ -203,6 +207,9 @@
                     
                     &2,&3,&4{
                       transform: skew(-10deg);
+                      @include media-breakpoint-down(xm){
+                        
+                      }
                     }
                     &2,&4{
                       // border: solid;
@@ -223,251 +230,75 @@
                         position: relative;
                         top: 17px;
                         // color: black;
+                        @include media-breakpoint-down(sm){
+                        // height: 10%;
+                        transform: skewX(0);
+                      }
+                      }
+                        @include media-breakpoint-down(sm){
+                        // height: 10%;
+                        transform: skewX(0);
                       }
                     }
                     &3{
                       background: $odd-color;
                       position: relative;
                       top: 3px;
+                      .icon, h1, p{
+                         @include media-breakpoint-down(sm){
+                        // height: 10%;
+                        transform: skewX(0);
+                      }
+                      }
+                      @include media-breakpoint-down(sm){
+                        transform: skewX(0);
+                      }
+                      
                     }
                     &4{
                       left: 2%;
-                      @include media-breakpoint-down(lg){
-                         position: relative;
-                    // border: solid orange;
-                        // .icon{
-                        //   top: 6px;
-                        // }
-                   
+                    //   @include media-breakpoint-down(lg){
+                    //      position: relative;
+                    //  }
+                    @include media-breakpoint-down(sm){
+                    transform: skewX(0deg);
                   }
+                     .icon, h1, p{
+                       @include media-breakpoint-down(sm){
+                      transform: skewX(0deg);
+                  }
+                     }
                     }
                     
                   }
+
+                   
                 
+                  @include media-breakpoint-down(sm){
+                                        // height: 10%;
+                                        // border: solid orange;
+                                        display: flex;
+                                        height: 40vh;
+                                        flex-direction: column;
+                                        background-color: $odd-color;
+                                        margin-bottom:50px;
+                                        font-size: 12px;
+                                        .box{
+                                          transform: skewX();
+                                          width: 100%;
+                                          height: 25%;
+                                          &2,&4{
+                                            background: $even-color;
+                                            width: 110%;
+                                          }
+                                        }
+
+                                      }
                 }
    
 
-
   }
 }
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-// #about{
-//   margin-top: 30px;  
-//   display: flex;
-//   flex-direction: column;
-//   height: 850px;    // ***********
-//   // @include media-breakpoint-up(sm) { 
-//   //   height: 450px;  
-//   //  }
-
-//   border: solid blue;
-
-//   h1{
-//     // border: solid;  
-//     height: 10%;
-//   }
-
-//   .gray-trap{
-//     height: 30vw; //*****  
-
-//     @include media-breakpoint-up(sm) { height: 60%; }
-
-
-//     // border: solid red;
-//     position: relative;
-
-//   .trap-container{
-//             width: 60%;  
-//             height: 85%;
-//             border: solid 8px $gold-color;
-//             position: absolute;
-//             left: -10%;
-//             bottom: 7.5%;
-//             transform: skewX(-10deg);
-//             background: gray;
-//             z-index: 10;
-
-//             &:before, &:after{
-//               content: '';  
-//               width: 75%;
-//               position: absolute;
-//               background: white;
-//               border: solid 4px white; // like container background
-//               left: -100px;
-//               top: -8px;
-//               transform: skewX(10deg);
-//             }
-//             &:after{
-//               width: 83%;  
-//               top: 100%;
-//             }
-
-//             .image{
-//               position: absolute;  
-//               width: 100%;
-//               height: 100%;
-//               overflow: hidden;
-//               ;
-//               &:after{
-//                 content: "";  
-//                 position: absolute;
-//                 width: 100%;
-//                 height: 100%;
-//                 right: -15%;
-//                 background-image: url("https://bi.im-g.pl/im/91/be/14/z21750929V,Osiedle-Zoliborz-Artystyczny.jpg");
-//                 transform: skewX(10deg);
-//                 background-size: cover;
-//                 transition: .45s;
-//               }
-//               &:hover{
-//                 &:after{
-//                   transform: skewX(10deg) scale(1.1);  
-//                   cursor: pointer;
-//                 }
-//               }
-//             }
-//         }
-
-
-//       .box{
-//         width: 76%;  
-//         // position: relative;
-//         transform: skewX(-10deg) translateX(70px);
-//         // border: solid;
-//         &__content{
-//           position: absolute;  
-//           right: -30px;
-//           // border: solid blue;
-//           @include media-breakpoint-up(sm) {
-        
-//         }  
-//         width: 350px;
-//         transform: skewX(10deg);
-//         p{
-//           color: $gray-color;  
-//           }
-//         }
-//       }
-//   }
-//   .multi-trap-contaner{
-//     height: 25%;  
-//     // border: solid;
-//     margin-top: 20px;
-//     width: 100%;
-//     .main{
-//       transform: translateY(0);  
-//       height: 100%;
-     
-//     }
-//   }
-// }
-
-
-
-//       .main{
-//       display: flex;  
-//       border: solid;
-//       transform: translateY(-235px);
-//       flex-direction: column;  // ***
-
-//        @include media-breakpoint-up(md) {
-//           flex-direction: row;  
-//         }
-     
-//       width: 100%;
-//       background: $odd-color;
-//       margin: auto;
-//       overflow: hidden;
-//       .box{
-//         width: 26%; //zarządź przestrzenią przy pomocy przestrzeni flex lub grid  
-      
-//         border: 0;
-//         .icon{
-//           position: relative;  
-//           top: 5px;
-//         }
-//         h1{
-//           position: relative;  
-//           margin-bottom: 20px;
-//           top: 10px;
-//         }
-//         p{
-//           position: relative;  
-//           top: 15px;
-//         }
-//         &1{
-//           width: 24%;  
-//           // border: solid;
-//           .icon{
-//             &:hover{
-//               transform: scale(1.3) skewX(0deg);  
-//             }
-//           }
-//         }
-        
-//         &2,&3,&4{
-//           transform: skew(-10deg);  
-//         }
-//         &2,&4{
-//           // border: solid;  
-//           background: $even-color;
-//         }
-//         &3, &4{
-//           position: relative;  
-//           bottom: 10px;
-//         }
-//         &3{
-//           background: $odd-color;  
-//           position: relative;
-//           top: 3px;
-//         }
-//         &4{
-//           width: 26%;  
-//         }
-        
-//       }
-    
-//     }
-
-
-
-
-
 
 
 

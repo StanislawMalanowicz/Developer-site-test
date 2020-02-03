@@ -11,6 +11,7 @@
 
 
 @import "../app/style/about";
+@import "../app/style/newsletter";
 // @import "../app/style/form";
 
 
@@ -117,22 +118,25 @@
   margin-bottom: 150px;
   height: 400px;
   border-bottom: solid white 50px;
-
+  
+  .line{
+    border: solid 4px $brown-color;
+    background-color: $brown-color;
+  }
   h2, .send{
     text-transform: uppercase;
+    color: $brown-color;
+  }
+  .send{
+    color: white;
+    // background-color: $gold-color;
   }
   input::placeholder, textarea{
     text-transform: uppercase;
   }
   
 }
-#newsletter{
-  background-color: $gold-color;
-
-  .echo-investment-container{
-    border-right: solid;
-  }
-} 
+ 
 
 
 

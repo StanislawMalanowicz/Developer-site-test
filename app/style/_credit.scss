@@ -6,17 +6,25 @@
   .gray-trap{
     position: relative;
     // width: 100%;
+      
     .businessman{
       position: absolute;
       z-index: 10;
       right: 40%;
       transform: skewX(0deg);
       height: 100%;
+      
     }
     .box{
         width: 60%;
         border-right: solid;
-        font-size: 16px;
+        // font-size: 16px;
+       @include media-breakpoint-down(sm){
+        // border: solid orange;
+        font-size: 9px;
+        width: 70%;
+        // right: 30px;
+      }
         .box__content{
             // border: solid;
             // font-size: .9rem;
@@ -29,6 +37,14 @@
             right: 10%;
             color: $gray-color;
             // border-right: ;
+            @include media-breakpoint-down(sm){
+        // border: solid orange;
+        // font-size: 9px;
+        // width: 85%;
+        right: 10vw;
+        top: 60px;
+        width: 90%;
+      }
             .contact-number-container{
                 display: flex;
                 // border: solid;

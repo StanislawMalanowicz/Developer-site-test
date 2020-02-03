@@ -41,6 +41,10 @@
                font-size: 14px;
                left: 8%;
               }
+             @include media-breakpoint-down(sm){
+               font-size: 10px;
+               left: -20%;
+              }
             h4{
                 color: $brown-color;
                 font-size: 1.5em;
@@ -63,6 +67,7 @@
           width: 60%;
           height: 80%;
           border: solid 8px $brown-color;
+          border-right: 0;
           position: absolute;
           right: -10%;
           bottom: 10%;

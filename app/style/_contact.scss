@@ -112,13 +112,13 @@
               height: 100%;
               left: -15%;
               background-image: url("https://bi.im-g.pl/im/91/be/14/z21750929V,Osiedle-Zoliborz-Artystyczny.jpg");
-              transform: skewX(-10deg);
+              transform: skewX(-10deg) translateX(-14px);
               background-size: cover;
               transition: .45s;
             }
             &:hover{
               &:after{
-                transform: skewX(-10deg) scale(1.1);
+                transform: skewX(-10deg) scale(1.1) translateX(-12px);
                 cursor: pointer;
               }
             }

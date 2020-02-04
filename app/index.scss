@@ -12,10 +12,17 @@
 
 @import "../app/style/about";
 @import "../app/style/newsletter";
+@import "../app/style/footer";
 // @import "../app/style/form";
 
 
-
+body{
+  font-family: sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+}
 #navbarResponsive{
   justify-content: flex-start;
 }
@@ -200,7 +207,3 @@
 
 
 
-        body {
-  font-family: sans-serif;
-  font-size: 18px;
-}

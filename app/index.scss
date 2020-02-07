@@ -15,7 +15,9 @@
 @import "../app/style/footer";
 @import "../app/style/contact-form";
 
-
+html{
+    scroll-behavior: smooth;
+}
 body{
   font-family: sans-serif;
   margin: 0;
@@ -23,6 +25,7 @@ body{
   border: 0;
   padding: 0;
 }
+
 // #navbarResponsive{
 //   justify-content: flex-start;
 // }

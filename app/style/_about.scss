@@ -85,7 +85,7 @@
         .box{
       position: relative;
       border: solid;
-      width: 74%;
+      width: 73%;
       height: 100%;
       background: $even-color;
       transform: skewX(-10deg) translateX(62px);
@@ -183,7 +183,7 @@
       }
 
       .description{
-        font-size: .8em;
+        font-size: .7em;
         color: $brown-color;
         margin-bottom: 0;
       }
@@ -215,19 +215,26 @@
           &:after{
             content: "";
             position: absolute;
-            // border: solid blue;
-            width: 25%;
+            // border: solid blue 1px;
+            width: 20%;
             height: 100%;
             top: 0;
-            right: -9%;
-            z-index: 10;
+            right: -7%;
+            z-index: 1;
             transform: skewX(-10deg);
             background-color: $odd-color;
           }
         }
 
-        &2{
-          width: 125%;
+        &2:after{
+          background-color: $even-color;
+        }
+
+        &2,&3{
+          .icon, .number, .description{
+            position: relative;
+            left: 5%;
+          }
         }
         
       }

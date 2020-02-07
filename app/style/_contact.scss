@@ -19,6 +19,7 @@
             height: 100%;
             transform: translateX(70px) skewX(13deg);
             z-index: -1;
+            
              @include media-breakpoint-down(md){
                 transform: translateX(70px) skewX(13deg)
               }

@@ -7,6 +7,31 @@
   border-right: solid 30px $gold-color;
     position: relative;
     
+.checkbox-round {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid #ddd;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    // position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:checked{
+      &:after{
+        content: "";
+    // position: absolute;
+    background: grey;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+      }
+    }
+  }
 
    @include media-breakpoint-down(md){
         font-size: 14px;

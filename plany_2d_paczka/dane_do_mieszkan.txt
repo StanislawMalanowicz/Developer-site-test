@@ -1,0 +1,29 @@
+Dane do mieszkań:
+
+01.png
+powierzchnia: 47.51 m2
+ilość pokoi: 2
+piętro: 3
+klatka: C
+nr mieszkania: 31
+
+02.png
+powierzchnia: 80.50 m2
+ilość pokoi: 4
+piętro: 2
+klatka: B
+nr mieszkania: 27
+
+03.png
+powierzchnia: 97.20 m2
+ilość pokoi: 6
+piętro: parter
+klatka B
+nr mieszkana: 02
+
+04.png
+powierzchnia: 53.10 m2
+ilość pokoi: 2
+piętro: parter
+klatka: B
+nr mieszkania: 11

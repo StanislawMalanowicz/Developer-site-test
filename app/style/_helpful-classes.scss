@@ -31,6 +31,7 @@
     content: ' ';
     position: absolute;
     color: $gold-color;
+    background-color: $gold-color;
     width: 30px;
     border: solid 1px;
     // bottom: 10%;
@@ -38,7 +39,12 @@
   }&:before{
     transform: translate(-40px, 17px);
   }
+    @include media-breakpoint-down(xs){
+        // padding: 0 8px;
+        font-size: 1rem;
+      }
 }
+
 .translate-button{
   position: relative;
   left: 10%;

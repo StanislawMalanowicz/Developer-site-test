@@ -1,0 +1,70 @@
+#flats{
+  border: solid;
+
+  .apartment-miniature{
+      display: flex;
+      flex-direction: column;
+      font-size: 10px;
+      position: fixed;
+      color: white;
+      z-index: 2300;
+      width: 90vw;
+      max-width: 450px;
+      height: 450px;
+      border: solid;
+      border-radius: 10px;
+      top: 30vh;
+      left: 0;
+      background-color: rgba($color: $even-color, $alpha: .6);
+      .close-button{
+          position: absolute;
+          right: 5%;
+      }
+      .title{
+        //   border: solid red;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          h3{
+              font-size: 1.6em;
+              color: $brown-color;
+          }
+      }
+      .apartment-description__container{
+          display: flex;
+          background-color: #fff;
+          color: $gold-color;
+          font-size: 1.4em;
+          .box{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+            //   border: solid;
+              flex: 1;
+              .description{
+                  color: black;
+              }
+          }
+      }
+
+      .apartment-picture{
+          width: 100%;
+        //   border: solid green;
+          margin: 5% 0;
+          background-color: $gray-color;
+          flex: 1;
+        //   background-image: url("../../images/company-logo.jpg");
+      }
+  }
+
+  .overlay{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba($color: black, $alpha: .7);
+      z-index: 2000;
+  }
+}

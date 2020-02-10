@@ -11,6 +11,7 @@
 
 
 @import "../app/style/about";
+@import "../app/style/flats";
 @import "../app/style/newsletter";
 @import "../app/style/footer";
 @import "../app/style/contact-form";
@@ -26,16 +27,9 @@ body{
   padding: 0;
 }
 
-// #navbarResponsive{
-//   justify-content: flex-start;
-// }
-// .navbar-nav{
-//   width: 100%;
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-// }
-
+.link{
+  color: red;
+}
 
 .gallery{
   // padding-top: 50px;
@@ -120,57 +114,6 @@ body{
   background-position: center;
   background-repeat: no-repeat;
 }
-
-
-// @media only screen and (min-width: 768px) {
-//         //  .height-230
-//         //  {
-//         //   height: 230px; 
-//         //  }
-//         //  .main{
-//         //    display: flex;
-//         //   //  border: solid;
-//         //  }
-//          #navbarNav{
-//           .link{
-//             box-sizing: border-box;
-//             transition: .4s;
-//             &__1, &__2, &__3, &__4{
-//               position: relative;
-//               font-size: 1.2rem;
-//             } 
-//             &__1, &__2{
-//               right: 2%;
-//             }
-//             &__3, &__4{
-//               left: 2%;
-//             }
-//            &:hover{
-//              border-bottom: solid 1px $brown-color;
-//             //  color: greenyellow;
-//            }
-
-//           }
-//          }
-     
-//         // .navigationn{
-//         //   position: absolute;
-//         //   left: 0;
-//         // }
-//           .navbar-brand{
-//             // position: relative;
-//             // border: solid;
-//             height: 100px;
-//             width: 100px;
-//             // left: 50%;
-//             margin-left: -60px;
-//             text-align: center;
-//             background: url("https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/168398/580/387/m1/fpnw/wm0/1-converted-01-.png?1408793749&s=287272880eb4ecac330e13ca2a84e849");
-//             background-size: 100%;
-//             background-position: center;
-//           }
-//         }
-
 
 
 

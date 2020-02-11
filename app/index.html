@@ -151,7 +151,7 @@
     <h1 class="mt-5 display-5 text-center my-5 text-uppercase title-color pl"> wybierz mieszkanie </h1>
     <h1 class="display-5 text-center my-5 text-uppercase title-color en"> choose your flat </h1>
     <img src="https://tulodz.pl/files/pl/02-5000-pix-1571803498.jpeg" alt="" class="img-fluid">
-    <!-- <table class="table table-striped ">
+    <table class="table table-striped ">
       <thead>
         <tr>
           <th scope="col"></th>
@@ -170,7 +170,7 @@
           <td>2</td>
           <td>3</td>
           <td>47.51 m2</td>
-          <td><a href="#">Sprawdź</a></td>
+          <td><a class="check" >Sprawdź</a></td>
         </tr>
         <tr>
           <th scope="row">2</th>
@@ -179,7 +179,7 @@
           <td>4</td>
           <td>2</td>
           <td>80.50 m2</td>
-          <td><a href="#">Sprawdź</a></td>
+          <td><a class="check" >Sprawdź</a></td>
         </tr>
         <tr>
           <th scope="row">3</th>
@@ -188,7 +188,7 @@
           <td>6</td>
           <td>parter</td>
           <td>97.20 m2</td>
-          <td><a href="#">Sprawdź</a></td>
+          <td><a class="check" >Sprawdź</a></td>
         </tr>
         <tr>
           <th scope="row">4</th>
@@ -197,12 +197,15 @@
           <td>2</td>
           <td>parter</td>
           <td>53.10 m2</td>
-          <td><a href="#">Sprawdź</a></td>
+          <td><a class="check" >Sprawdź</a></td>
         </tr>
       </tbody>
-    </table> -->
-    <div class="apartment-miniature ">
-      <button class="close-button">X</button>
+    </table>
+    <div class="apartment-miniature none">
+      <!-- <button class="close-button">X</button> -->
+      <button type="button" class="close close-button" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
       <div class="title">
         <h3>Szczegóły apartamentu</h3>
       </div>
@@ -227,8 +230,9 @@
       </div>
 
       <div class="apartment-picture"></div>
+
     </div>
-    <div class="overlay"></div>
+    <div class="overlay none"></div>
   </section>
 
   <section id="localization">

@@ -1,33 +1,46 @@
+
+    
+
 #flats{
   border: solid;
 
   .apartment-miniature{
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      z-index: 2300;
+      background-color: rgba($color: $even-color, $alpha: 1);
+      transform: scale(1) translate(-50%, -50%);
       display: flex;
       flex-direction: column;
       font-size: 10px;
       position: fixed;
       color: white;
-      z-index: 2300;
-      width: 90vw;
-      max-width: 450px;
-      height: 450px;
+      width: 80vw;
+      max-width: 550px;
+      height: 70vh;
       border: solid;
       border-radius: 10px;
-      top: 30vh;
-      left: 0;
-      background-color: rgba($color: $even-color, $alpha: .6);
+     
+      transition: .5s;
+      
+    
       .close-button{
           position: absolute;
-          right: 5%;
+          right: 2%;
       }
+
       .title{
         //   border: solid red;
+          padding: 10px;
           display: flex;
           justify-content: center;
           align-items: center;
+        //   margin-bottom: 10px;
           h3{
               font-size: 1.6em;
               color: $brown-color;
+              font-weight: bold;
           }
       }
       .apartment-description__container{
@@ -50,14 +63,23 @@
 
       .apartment-picture{
           width: 100%;
-        //   border: solid green;
+          border: solid $gold-color;
+          border-radius: 10px;
           margin: 5% 0;
           background-color: $gray-color;
           flex: 1;
-        //   background-image: url("../../images/company-logo.jpg");
+          background-image: url("https://static.deccoria.pl/4/9/3/38acb3672b0ae79b28d35529c0e229e7_4931156d32c1d5fcd95fa58995834151-1220x1024.jpg");
+          background-size: 100%;
       }
   }
-
+  .check{
+      color: $gold-color;
+      text-decoration: underline;
+      cursor: pointer;
+      &:hover{
+          color: blue;
+      }
+  }
   .overlay{
       position: fixed;
       top: 0;
@@ -66,5 +88,31 @@
       height: 100vh;
       background-color: rgba($color: black, $alpha: .7);
       z-index: 2000;
+      transform: scale(1);
   }
+  .none{
+      transform: scale(0) ;
+      // display: none;
+  }
+}
+
+.test{
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background-color: rgba($color: $even-color, $alpha: .9);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9000;
+    
+}
+.run{
+    transform: translateX(-200vh);
+}
+.border{
+    border: solid green;
+}
+.background-green{
+    background-color: green;
 }

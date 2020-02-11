@@ -1,4 +1,5 @@
-import 'bootstrap/dist/js/bootstrap'
+import 'bootstrap/dist/js/bootstrap';
+import flatOne from '../images/01.png';
 import './index.scss';
 import "@fortawesome/fontawesome-free/js/fontawesome";
 import "@fortawesome/fontawesome-free/js/solid";
@@ -25,3 +26,22 @@ console.log('Boilerplate is working!');
 //     //  return;
     
 // })
+const closeBtn = document.querySelector('.close-button');
+const flatCart = document.querySelector('.apartment-miniature');
+const overlay = document.querySelector('.overlay');
+const miniatureLinks = document.querySelectorAll('.check');
+
+closeBtn.addEventListener('click', () =>{
+    console.log('close btn');
+    
+    overlay.classList.add('none');
+    flatCart.classList.add('none');
+})
+
+miniatureLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        // this.classList.remove('none');
+        flatCart.classList.remove('none');
+        overlay.classList.remove('none');
+    })
+})

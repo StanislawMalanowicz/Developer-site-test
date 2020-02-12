@@ -1,8 +1,8 @@
 #contact{
       display: flex;
-  height: 750px;
+  height: 650px;
   flex-direction: column;
-  
+  // border: solid;
     .contact-container{
         background-color: $odd-color;
         // border: solid red;
@@ -39,12 +39,14 @@
             color: $gray-color;
             font-size: 16px;
              @include media-breakpoint-down(md){
-               font-size: 14px;
-               left: 8%;
+               font-size: 13px;
+               left:-70px;
+              //  left: 8%;
               }
              @include media-breakpoint-down(sm){
                font-size: 10px;
-               left: -20%;
+              //  left: 0%;
+              // border: solid;
               }
             h4{
                 color: $brown-color;

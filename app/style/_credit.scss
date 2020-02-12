@@ -2,22 +2,35 @@
   
    display: flex;
   height: 650px;
+  
+  // border: solid;
   flex-direction: column;
   .gray-trap{
     position: relative;
     // width: 100%;
+    // border: solid;
+    height: 500px;
       
     .businessman{
       position: absolute;
-      z-index: 10;
-      right: 40%;
-      transform: skewX(0deg);
-      height: 100%;
-      
+      z-index: 1;
+      // right: 40%;
+      // transform: skewX(0deg);
+      left: -90px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 55%;
+      // border: solid;
+       @include media-breakpoint-up(sm){
+        height: 70%;
+      }
+       @include media-breakpoint-up(md){
+        height: 100%;
+      }
     }
     .box{
         width: 60%;
-        border-right: solid;
+        // border-right: solid red;
         // font-size: 16px;
        @include media-breakpoint-down(sm){
         // border: solid orange;
@@ -26,24 +39,26 @@
         // right: 30px;
       }
         .box__content{
-            // border: solid;
+            // border: solid red;
             // font-size: .9rem;
             text-align: end;
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 60%;
+            width: 48vw;
+            max-width: 300px;
             position: absolute;
-            right: 10%;
+            right: 9%;
             color: $gray-color;
             // border-right: ;
             @include media-breakpoint-down(sm){
         // border: solid orange;
         // font-size: 9px;
         // width: 85%;
-        right: 10vw;
-        top: 60px;
-        width: 90%;
+        // right: 10vw;
+        top: 0;
+        left: -20px;
+        // width: 100%;
       }
             .contact-number-container{
                 display: flex;

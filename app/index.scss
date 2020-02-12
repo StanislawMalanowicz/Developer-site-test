@@ -28,7 +28,11 @@ body{
 }
 
 .link{
-  color: red;
+  // color: red;
+  @include media-breakpoint-down(md){
+    font-size: 14px;
+  }
+  
 }
 
 .gallery{
@@ -115,6 +119,12 @@ body{
   background-repeat: no-repeat;
 }
 
-
+.navi{
+  // border: solid green;
+  // height: 10px;
+  // display: flex;
+  max-height: 15vh;
+  // width: auto;
+}
 
 

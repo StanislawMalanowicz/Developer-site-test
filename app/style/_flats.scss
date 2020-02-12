@@ -3,7 +3,7 @@
 
 #flats{
 //   border: solid;
-
+// display: none;
   .flat-table{
     //   width: 10vw;
         // border: solid;
@@ -86,9 +86,13 @@
       font-size: 1.8em;
       cursor: pointer;
       transition: .2s;
-      &:hover{
-        //   color: blue;
-        transform: scale(1.4);
+      .icon{
+          transition: .2s;
+          &:hover{
+            //   color: blue;
+            // border: solid;
+            transform: scale(1.4);
+          }
       }
   }
   .overlay{
@@ -104,6 +108,12 @@
   .none{
       transform: scale(0) ;
       // display: none;
+  }
+  thead{
+      color: $brown-color;
+  }
+  tbody{
+      color: $gray-color;
   }
 }
 

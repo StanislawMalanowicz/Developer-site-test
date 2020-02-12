@@ -34,7 +34,8 @@
         top: 50%;
         transform: translateY(-50%);
             .text{
-
+                font-size: .9em;
+                margin-left: 2px;
                 @include media-breakpoint-down(xs){
                 display: none;
         

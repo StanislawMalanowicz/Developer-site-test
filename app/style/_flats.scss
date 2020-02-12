@@ -83,9 +83,12 @@
   .check{
       color: $gold-color;
       text-decoration: underline;
+      font-size: 1.8em;
       cursor: pointer;
+      transition: .2s;
       &:hover{
-          color: blue;
+        //   color: blue;
+        transform: scale(1.4);
       }
   }
   .overlay{

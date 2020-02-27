@@ -1,0 +1,152 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+body{
+    background:white;
+
+}
+
+
+
+
+
+
+
+
+.flat-card{
+  display: flex;
+  flex-direction: column;
+  /* border: solid blue; */
+  border-radius: 10px;
+  background-color: #e6e7eb;
+  width: 300px;
+  height: 100vh;
+  font-size: 16px;
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.flat-card .title{
+  display: flex;
+  /* border: solid; */
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+/* .flat-card .title h1{
+  border: solid;
+  
+} */
+.flat-card .title .flat-number{
+  width: 70px;
+  height: 40px;
+  border-radius: 8px;
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 30px; */
+}
+.flat-card .description{
+  display: flex;
+  width: 100%;
+/*   border: solid; */
+margin: 20px 0;
+  justify-content: space-around;
+}
+.flat-card .description .rooms-number{
+  border-right: solid;
+  border-left: solid;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+.flat-card .pdf{
+  width: 100%;
+  background: gray;
+  border-radius: 15px;
+  height: 40px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.flat-card .is-free{
+  color: green;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.flat-card .price{
+  width: 100%;
+  background: green;
+  border-radius: 15px;
+  height: 40px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  color: white;
+}
+
+
+
+.housing-project{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border: solid; */
+    /* min-width: 22%; */
+    /* min-height: 20%; */
+    height: 200px;
+    width: 200px;
+    
+}
+.housing-project img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 568px) { 
+       .housing-project{
+           /* border: solid red; */
+           top: 40%;
+          left: 60%;
+           transform: scale(2.5) ;
+           z-index:-1;
+           
+       }
+       .flat-card{
+           left: 160px;
+       }
+}
+@media (min-width: 768px) { 
+    .housing-project{
+        left: 50%;
+        transform: translateY(-50%) scale(4);
+    }
+ }

@@ -1,7 +1,7 @@
 #contact{
       display: flex;
-  height: 650px;
-  flex-direction: column;
+      height: 650px;
+      flex-direction: column;
   // border: solid;
     .contact-container{
         background-color: $odd-color;
@@ -27,7 +27,7 @@
 
         .content-container{
             position: absolute;
-            // border: solid green;
+           
             left: 15%;
             display: flex;
             flex-direction: column;
@@ -40,11 +40,19 @@
             font-size: 16px;
              @include media-breakpoint-down(md){
                font-size: 13px;
-               left:-70px;
-              //  left: 8%;
+               left:8%;
+              //  right: 0%;
+              //  border: solid green 1px;
               }
              @include media-breakpoint-down(sm){
                font-size: 10px;
+               left: 0%;
+              // border: solid;
+              }
+             @include media-breakpoint-down(xs){
+               font-size: 8px;
+               left: -75px;
+               z-index: 10;
               //  left: 0%;
               // border: solid;
               }
@@ -72,19 +80,30 @@
           border: solid 8px $brown-color;
           border-right: 0;
           position: absolute;
-          right: -10%;
+          right: -12%;
           bottom: 10%;
           transform: skewX(10deg);
           background: $gray-color;
-          @include media-breakpoint-down(md){
-            font-size: 14px;
-            width: 50%;
-            height: 80%;
-          }
-          @include media-breakpoint-down(md){
-            width: 40%;
-            height: 60%;
-            bottom: 20%;
+          // @include media-breakpoint-down(md){
+          //   font-size: 14px;
+          //   width: 50%;
+          //   height: 80%;
+          //   border: solid blue;
+          // }
+          // @include media-breakpoint-down(md){
+          //   width: 40%;
+          //   height: 60%;
+          //   bottom: 20%;
+          //   right: -11%;
+          //   // border: solid green;
+          // }
+          @include media-breakpoint-down(xs){
+            // width: 40%;
+            // height: 75%;
+            // bottom: 20%;
+            right: -22%;
+            // border: solid green;
+            // margin-right: 20px;
           }
 
           &:before, &:after{

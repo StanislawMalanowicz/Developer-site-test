@@ -6,7 +6,7 @@
   border-left: solid 30px $gold-color;
   border-right: solid 30px $gold-color;
     position: relative;
-    
+    // text-align: center;
 .checkbox-round {
     width: 1.3em;
     height: 1.3em;
@@ -48,10 +48,18 @@
     top: -50px;
     // display: flex;
     // height: 100px;
+     @include media-breakpoint-down(sm){
+        // border: solid blue;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+
     .echo-investment-container{
-        // border-right: solid;
+       
         height: 100%;
         margin-left: 0;
+
         // border-left: solid;
         .logo{
             text-transform: uppercase;
@@ -70,18 +78,25 @@
             letter-spacing: .1em;
             }
         }
+        @include media-breakpoint-down(sm){
+          // border: solid brown;
+       }
     }
 
     .comercial-text{
       // border: solid pink;
+      // text-align: center;
       p{
         // background-color: yellow;
         margin: 0;
         font-style: italic;
         line-height: 1.4em;;
       }
+      @include media-breakpoint-down(sm){
+        //  border: solid green;
+        
+       }
     }
-    
 
   }
   .contact{
@@ -106,8 +121,19 @@
         margin-bottom: 1.1em;
         
       }
+      .opening-hours, .saturday, .address{
+        text-indent: 10px;
+        p{
+          // color: red;
+          line-height: .2;
+          
+        }
+      }
       .address{
         font-weight: bold;
+        // text-indent: 10px;
+        margin-bottom: 20px;
+        margin-top: 30px;
       }
       .text{
           font-size: 1em ;

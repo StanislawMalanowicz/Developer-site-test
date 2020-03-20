@@ -1,0 +1,24 @@
+#mapa-poi{
+    // border: solid;
+    .background{
+        border: solid red;
+        position: relative;
+       
+    }
+    .img{
+        width: 100%;
+    }
+    .carousel{
+        position: absolute;
+        top: 0;
+        // bottom: 400px;
+    }
+    .carousel-item{
+        border: solid blue;
+        opacity: .7;
+    }
+}
+.g-recaptcha{
+  margin: 4% auto;
+  width: 100%;
+}

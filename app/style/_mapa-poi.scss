@@ -1,9 +1,9 @@
 #mapa-poi{
     // border: solid;
     .background{
-        border: solid red;
+        // border: solid red;
         position: relative;
-       
+        z-index: 1;
     }
     .img{
         width: 100%;
@@ -12,10 +12,34 @@
         position: absolute;
         top: 0;
         // bottom: 400px;
+        // height: 50%;
+       
+        // border: solid blue;
+        height: 100%;
+        width: 100%;
+    }
+    .carousel-inner{
+        height: 100%;
+
     }
     .carousel-item{
-        border: solid blue;
+        background-color: black;
+        color: white;
         opacity: .7;
+        height: 100%;
+        // width: 100%;
+        // z-index: 10;
+        // // background-color: rgb(158, 184, 111, .7);
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        position: relative;
+        .content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            
+        }
     }
 }
 .g-recaptcha{

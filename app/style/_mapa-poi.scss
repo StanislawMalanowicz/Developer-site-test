@@ -1,48 +1,103 @@
-#mapa-poi{
+// #mapa-poi{
     // border: solid;
-    .background{
-        // border: solid red;
-        position: relative;
-        z-index: 1;
-    }
-    .img{
-        width: 100%;
-    }
-    .carousel{
-        position: absolute;
-        top: 0;
-        // bottom: 400px;
-        // height: 50%;
+    // .background{
+    //     // border: solid red;
+    //     position: relative;
+    //     z-index: 1;
+    // }
+    // .img{
+    //     width: 100%;
+    // }
+    // .carousel{
+    //     position: absolute;
+    //     top: 0;
+    //     // bottom: 400px;
+    //     // height: 50%;
        
-        // border: solid blue;
-        height: 100%;
-        width: 100%;
-    }
-    .carousel-inner{
-        height: 100%;
+    //     // border: solid blue;
+    //     height: 100%;
+    //     width: 100%;
+    // }
+    // .carousel-inner{
+    //     height: 100%;
 
-    }
-    .carousel-item{
-        background-color: black;
-        color: white;
-        opacity: .7;
-        height: 100%;
-        // width: 100%;
-        // z-index: 10;
-        // // background-color: rgb(158, 184, 111, .7);
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        position: relative;
-        .content{
-            position: absolute;
-            top: 50%;
-            left: 50%;
+    // }
+    // .carousel-item{
+    //     // background-color: black;
+    //     color: white;
+    //     // opacity: .7;
+    //     height: 100%;
+    //     // width: 100%;
+    //     // z-index: 10;
+    //     // // background-color: rgb(158, 184, 111, .7);
+    //     // display: flex;
+    //     // justify-content: center;
+    //     // align-items: center;
+    //     position: relative;
+    //     div{
+    //         width: 60%;
+    //         border: solid;
+    //     }
+    //     .content{
+    //         position: absolute;
+    //         top: 50%;
+    //         left: 50%;
             
+    //     }
+    // }
+// }
+
+#mapa-poi{
+    .carousel-inner{
+        height: 50vw;
+        // display: flex;
+        text-align: center;
+        background: url('/small-data-images/map.png');
+        
+        // background-color: red;
+            @include media-breakpoint-up(sm) { 
+                height: 287px;
+            
+            }
+            @include media-breakpoint-up(md) { 
+                height: 388px;
+            
+            }
+            @include media-breakpoint-up(lg) { 
+                height: 523px;
+            
+            }
+            @include media-breakpoint-up(xl) { 
+                height: 625px;
+            
+            }
+        .carousel-item{
+            height: 100%;
+            width: 100%;
+            // text-align: center;
+            div{
+                // border: solid green;
+                background-color: black;
+                opacity: .7;
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p{
+                    position: relative;
+                    color: white;
+                    opacity: 1;
+                    z-index: 99;
+                }
+            }
         }
     }
 }
-.g-recaptcha{
-  margin: 4% auto;
-  width: 100%;
-}
+
+
+
+
+

@@ -1,0 +1,24 @@
+#localization{
+    // border: solid;
+    .map-container{
+        iframe{
+            height: 50vw;
+            @include media-breakpoint-up(sm) { 
+                height: 287px;
+            
+            }
+            @include media-breakpoint-up(md) { 
+                height: 388px;
+            
+            }
+            @include media-breakpoint-up(lg) { 
+                height: 523px;
+            
+            }
+            @include media-breakpoint-up(xl) { 
+                height: 625px;
+            
+            }
+        }
+    }
+}

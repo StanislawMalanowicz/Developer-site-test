@@ -30,13 +30,12 @@
     }
     .box{
         width: 60%;
-        // border-right: solid red;
-        // font-size: 16px;
+       
        @include media-breakpoint-down(sm){
-        // border: solid orange;
+      
         font-size: 9px;
         width: 72%;
-        // right: 30px;
+       
       }
         .box__content{
             // border: solid red;
@@ -50,15 +49,12 @@
             position: absolute;
             right: 9%;
             color: $gray-color;
-            // border-right: ;
+        
             @include media-breakpoint-down(sm){
-        // border: solid orange;
-        // font-size: 9px;
-        // width: 85%;
-        // right: 10vw;
+   
         top: 0;
         left: -20px;
-        // width: 100%;
+       
       }
             .contact-number-container{
                 display: flex;

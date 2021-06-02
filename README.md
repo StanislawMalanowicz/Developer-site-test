@@ -1,19 +1,1 @@
-# Minimalist Webpack Boilerplate
 
-## Instructions
-
-* Clone repo - `git clone https://github.com/jpggvilaca/webpack-boilerplate.git`
-* Change to the cloned repo's folder - `cd webpack-boilerplate`
-* Install dependencies - `npm install`
-* Start the server - `npm start`
-* Navigate to `localhost:8080` in the browser
-* Enjoy!
-
-## Content
-
-* Webpack 4
-* ES6 support
-* Sass support
-* Hot Module Reload - browser reloads whenever a js or scss file changes
-
-* You can change the port on webpack.config.js on line 22
